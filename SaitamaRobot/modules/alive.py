@@ -4,9 +4,7 @@ import re, os
 
 from SaitamaRobot.events import register
 
-from SaitamaRobot import telethn as SaitamaRobot
-
-from SaitamaRobot import telethn as SaitamaRobot
+from SaitamaRobot import telethn
 
 PHOTO = "https://telegra.ph/file/c93c5bbc5494c0188a541.jpg "
 
@@ -28,4 +26,4 @@ async def awake(event):
 
   BUTTON = [[Button.url("Support", "https://t.me/KazukoSupportChat"), Button.url("Update", "https://t.me/phoenix_empire")]]
 
-  await SaitamaRobot.send_file(event.chat_id, PHOTO, caption=Kazuko,  buttons=BUTTON)
+  await telethn.send_file(event.chat_id, PHOTO, caption=Megumin, buttons=BUTTON)
